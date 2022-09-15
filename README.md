@@ -1,3 +1,6 @@
+# TodoAppScss
+
+
 1. Created with SCSS
 2. Contains navbar and sidebar made using Angular Material.
 3. Has basic routing.
@@ -7,7 +10,6 @@
 
 
 
-# TodoAppScss
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 
