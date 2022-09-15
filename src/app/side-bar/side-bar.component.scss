@@ -1,0 +1,45 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+  background-color: lightskyblue;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.sidenav .mat-toolbar span {
+  color: white;
+}
+
+.mat-nav-list {
+  color: white;
+}
+
+.mat-toolbar-row {
+  height: 70px;
+  background-color: dodgerblue;
+}
+
+.mat-toolbar-row a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 15px;
+}
+
+.mat-toolbar-row span:hover {
+  opacity: 0.7;
+}
+
+.mat-nav-list a:hover {
+  opacity: 0.7;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
