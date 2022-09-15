@@ -1,4 +1,8 @@
 <div appHighlight color="pink" class="main-container">
-  <h1>Deleted</h1>
-  <h3> This is the content of Deleted List </h3>
+  <h1>{{ title }}</h1>
+  <h3> This is the content of {{ title }} List </h3>
+
+  <button mat-flat-button color="primary"
+  (click)="onCheck()"
+  >Check</button>
 </div>

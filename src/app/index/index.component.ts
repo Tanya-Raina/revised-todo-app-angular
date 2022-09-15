@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CheckService} from "../services/check.service";
 
 @Component({
   selector: 'app-index',
@@ -8,10 +9,16 @@ import { Component, OnInit } from '@angular/core';
 export class IndexComponent implements OnInit {
 
   item: string = 'Learn Angular';
+  title: string = 'To-Do';
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onCheck() {
+    const checkService = new CheckService();
+    checkService.onCheckClicked(this.title);
   }
 
 }

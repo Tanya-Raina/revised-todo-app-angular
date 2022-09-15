@@ -4,6 +4,7 @@
 4. Has a custom directive - `appHighlight`.
 5. Demonstrates simple two way binding.
 6. The SCSS files are written in common CSS. [To be converted to SCSS]
+7. Added a check Service used by all 3 components.
 
 
 
@@ -36,6 +37,8 @@
 
 
 ## Two Way Binding
+- https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/wpf-to-angular-guide/two-way-binding
+- https://youtu.be/MrjTTDEj7cA
 - This binding goes from the DOM to the component and vice versa.
 - It is a combination of property binding and event binding.
 - We can use `[(ngModel)]` to create two way binding.
@@ -43,3 +46,16 @@
 - Eg: `<input type="text" [(ngModel)]="name">`.
 - `<h1>{{name}}</h1>`.
 - This taked the value from the input and puts it in the name property.
+
+
+## Services
+- https://youtu.be/1zLfEqImGLI
+- https://youtu.be/cZV3_9oE8to
+- Suppose we have 3 components, and we want to `alert('Thanks for enrolling')` on each of them - each will have the same `onEnroll()` method in all 3 .ts files.
+- We can create a service to avoid this.
+- Task of providing data to all the components.
+- And it also helps communicate between components - ones that don't share a parent-child relationship.
+
+
+- Here, every time I click on a route, we should get an alert.
+- 

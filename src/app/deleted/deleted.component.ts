@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CheckService} from "../services/check.service";
 
 @Component({
   selector: 'app-deleted',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DeletedComponent implements OnInit {
 
+  title: string = 'Deleted';
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onCheck() {
+    const checkService = new CheckService();
+    checkService.onCheckClicked(this.title);
+  }
 }

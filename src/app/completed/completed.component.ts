@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CheckService} from "../services/check.service";
 
 @Component({
   selector: 'app-completed',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompletedComponent implements OnInit {
 
+  title: string = 'Completed';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onCheck() {
+    const checkService = new CheckService();
+    checkService.onCheckClicked(this.title);
   }
 
 }
