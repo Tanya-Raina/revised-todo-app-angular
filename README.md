@@ -1,3 +1,12 @@
+1. Created with SCSS
+2. Contains navbar and sidebar made using Angular Material.
+3. Has basic routing.
+4. Has a custom directive - `appHighlight`.
+5. Demonstrates simple two way binding.
+6. The SCSS files are written in common CSS. [To be converted to SCSS]
+
+
+
 # TodoAppScss
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
